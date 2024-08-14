@@ -3,7 +3,6 @@ import faiss
 from sentence_transformers import SentenceTransformer
 from global_settings import INDEX_STORAGE
 
-
 # Function to build vector and tree indexes
 def build_indexes(nodes):
     index = faiss.IndexFlatL2(nodes.shape[1])  # Assuming nodes is a 2D numpy array
