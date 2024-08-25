@@ -1,7 +1,7 @@
 import os
 import faiss
 from sentence_transformers import SentenceTransformer
-from global_settings import INDEX_STORAGE
+from global_settings import INDEX_STORAGE, EMBEDDING_MODEL
 
 # Function to build vector and tree indexes
 def build_indexes(nodes):
@@ -22,7 +22,7 @@ def ingest_documents(file_path):
     with open(file_path, 'r') as f:
         documents = f.readlines()
 
-    embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+    embedding_model = SentenceTransformer(EMBEDDING_MODEL)
     embeddings = embedding_model.encode(documents)
 
     return embeddings, documents
