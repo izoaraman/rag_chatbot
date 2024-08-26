@@ -1,9 +1,16 @@
 # Chat with PDF locally
 a simple local RAG (Retrieval Augmented Generation) pipeline for chatting with PDFs.
-## Setup
 
-Create a virtual environment and install the required packages:
+### How to run it on your own machine
 
-```bash
-$ pip install -r requirements.txt
-```
+1. Install the requirements
+
+   ```
+   $ pip install -r requirements.txt
+   ```
+
+2. Run the app
+
+   ```
+   $ streamlit run streamlit_app.py
+   ```
