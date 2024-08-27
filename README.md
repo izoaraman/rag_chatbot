@@ -12,5 +12,5 @@ a simple local RAG (Retrieval Augmented Generation) pipeline for chatting with P
 2. Run the app
 
    ```
-   $ streamlit run streamlit_app.py
+   $ streamlit run chatbot.py
    ```
